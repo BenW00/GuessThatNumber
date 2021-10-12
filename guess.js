@@ -64,6 +64,12 @@ while (restartGame){
     // Removes an attempt
     attempts--;
 
+    // Checks if the user guessed correctly. If so, the game ends (NOTE: The BREAK ends the loop)
+    if (guess === randomNum){
+      alert(`CONGRATULATIONS YOU GUESSED THE CORRECT NUMBER: ${randomNum}`);
+      break;
+    }
+
     break;
   }
 
